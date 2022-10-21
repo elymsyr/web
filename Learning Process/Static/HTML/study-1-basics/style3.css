@@ -1,0 +1,22 @@
+h1 {
+  font-family: cursive;
+  color: rgba(91, 26, 171, 0.4);
+  font-style: oblique;
+  font-weight: 200;
+  text-align: left;
+  text-decoration: overline;
+  text-indent: 60px;
+  text-transform: lowercase;
+  letter-spacing: -5px;
+  line-height: 100px
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 22px;
+  line-height: 30px;
+  text-indent: 30px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .signup-title {
+            text-align: center;
+            font-size: 30px;
+            color: #2E4C6D;
+        }
+
+        .signup-form {
+            width: 500px;
+            margin: auto;
+        }
+
+        .signup-form label, .signup-form input:not([type="checkbox"]), .signup-form select {
+            display: block;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .signup-form input[type="checkbox"], .signup-form input[type="checkbox"] + label {
+            display: inline-block;
+            width: auto;
+        }
+
+        .signup-form button[type="submit"] {
+            display: block;
+            margin-top: 15px;
+        }
+
+        .signup-form input:not([type="checkbox"]), .signup-form select {
+            border: 1px solid #ccc;
+            padding: 10px 15px;
+        }
+
+        .signup-form input:not([type="checkbox"]):focus, .signup-form select:focus {
+            outline: none;
+            background-color: yellowgreen;
+            border: 1px solid greenyellow;
+            color: aqua;
+        }
+
+        .signup-form input[type="checkbox"] {
+            appearance: none;
+            width: 15px;
+            height: 15px;
+            border: 1px solid #2E4C6D;
+            border-radius: 50%;
+            vertical-align: bottom;
+        }
+
+        .signup-form input[type="checkbox"]:hover {
+            background-color: gray;
+        }
+
+        .signup-form input[type="checkbox"]:checked {
+            background-color: blue;
+        }
+
+
+    </style>   
+
+</head>
+<body id="body">  
+
+    <main class="signup-page">
+        <h1 class="signup-title">Create Your Account</h1>
+        <form action="" class="signup-form">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname">
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <label for="password">Password</label>
+            <input type="password" id="password">
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+                <option value="">Select</option>
+                <option value="">Kadın</option>
+                <option value="">Erkek</option>
+            </select>
+
+            <input type="checkbox" id="agree-terms">
+            <label for="agree-terms">Agree to 
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+
+            <button type="submit" class="btn btn-primary">Sign Up</button>
+        </form>
+    </main>
+
+</body>
+</html>

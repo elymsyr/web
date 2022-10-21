@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap-Temp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <body>
+
+    <div class="container my-5">
+
+        <p>
+            <a href="#content" class="btn btn-primary" data-bs-toggle="collapse">Link</a>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#content">Button</button>
+        </p>
+
+        <div id="content" class="collapse">
+            <div class="card card-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor tempore asperiores at ratione sunt voluptate architecto laborum, totam accusamus nam.
+            </div>
+        </div>
+
+        <br><br><br>
+
+        <div class="accordion accordion-flush" id="myAccordion">
+
+            <div class="accordion-item">
+                <h2 class="accordion-heaeder">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">Accordion #1 Item</button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam dolor in at deserunt debitis sint animi, reiciendis modi a.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-heaeder">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Accordion #2 Item</button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam dolor in at deserunt debitis sint animi, reiciendis modi a.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-heaeder">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">Accordion #3 Item</button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+                    <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quisquam dolor in at deserunt debitis sint animi, reiciendis modi a.</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>

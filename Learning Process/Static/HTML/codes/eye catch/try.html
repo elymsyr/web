@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #34495e;
+        }
+
+        .teddy-bear {
+            bottom: -1px;
+            left: 20px;
+            position: fixed;
+            height: 95px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .teddy {
+            width: 300px;
+            height: auto;
+            position: fixed;
+            bottom: -188px;
+            left: -50px;
+            transform: rotate(9deg);
+        }
+
+        .eyes{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            text-align: center;
+        }
+            .eye{
+            width: 13px;
+            height: 13px;
+            background: #fff;
+            display: inline-block;
+            margin: 0;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+            .ball{
+            width: 9px;
+            height: 9px;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+        }
+
+        /* .eyes {
+            margin: 0;
+            padding: 0;
+            border: 2px solid rgb(255, 255, 255);
+            position: absolute;
+            top:  45.5px;
+            height: 20px;
+            width: 120px;
+            left: 70px;
+            z-index: 1000000;
+        }
+
+        .eye{
+            padding: 0;
+            height: 13px;
+            width: 13px;
+            background: #fff;
+            display: inline-block;
+            margin: 4px 4px 8px 6px;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        } */
+
+        /* .eye-left {
+            border: 1px solid rgba(17, 17, 17, 0);
+            z-index: 1000000000000000000;
+            position: absolute;
+            top:  3px;
+            height: 13px;
+            width: 13px;
+            left: 4px;
+            border-radius: 50%;
+        }
+
+        .eye-right {
+            border: 1px solid rgba(17, 17, 17, 0);
+            z-index: 1000000000000000000;
+            position: absolute;
+            top:  3.2px;
+            height: 13px;
+            width: 13px;
+            right: 4px;
+            border-radius: 50%;
+        } */
+
+        /* .ball {
+            z-index: 100000000000000000000000;
+            width: 9px;
+            height: 9px;
+            background: rgb(0, 0, 0);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            filter: blur(.3px);
+        } */
+
+    </style>
+
+
+
+</head>
+<body>
+    
+
+    <div class="teddy-bear">
+        <img src="teddy.png" alt="" class="teddy">
+        <div class="eyes">
+          <div class="eye">
+            <div class="ball"></div>
+          </div>
+          <div class="eye">
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
+
+      <script>
+        var balls = document.getElementsByClassName("ball");
+        document.onmousemove = function(){
+          var x = event.clientX * 100 / window.innerWidth + "%";
+          var y = event.clientY * 100 / window.innerHeight + "%";
+          //event.clientX => get the horizontal coordinate of the mouse
+          //event.clientY => get the Vertical coordinate of the mouse
+          //window.innerWidth => get the browser width
+          //window.innerHeight => get the browser height
+      
+          for(var i=0;i<2;i++){
+            balls[i].style.left = x;
+            balls[i].style.top = y;
+            balls[i].style.transform = "translate(-"+x+",-"+y+")";
+          }
+        }
+      </script>
+</body>
+</html>

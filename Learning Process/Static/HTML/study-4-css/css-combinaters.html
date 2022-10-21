@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div > p { 
+      background-color: red;
+    } */
+    
+    /* div > p { 
+      background-color: red;
+    } */
+
+    /* div + p { 
+      background-color: red;
+    } */
+
+    div ~ p { 
+      background-color: red;
+    }
+  </style>
+</head>
+<body>
+  
+      <!-- Combinators -->
+
+      <!-- 1- Descendant Selector ( ) -->  <!-- p in any div -->
+      <!-- 2- Child Selector -->   <!-- p just in div -->
+      <p>1. Paragraf</p>
+      <div>
+        <p>2. Paragraf</p>
+        <p>3. Paragraf</p>
+        <section>
+          <p>4. Paragraf</p>
+        </section>
+      </div>
+      <p>5. Paragraf</p>
+      <p>6. Paragraf</p>
+
+      
+      <!-- 3- Adjacent Sibling Selector (+) -->  <!-- first p after a div -->
+      <!-- 4- General Sibling Selector (~) -->   <!--  -->
+
+</body>
+</html>

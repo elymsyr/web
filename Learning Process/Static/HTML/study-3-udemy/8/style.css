@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+}
+
+.bg {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.bg-image1 {
+  background-image: url("bg-2.jpeg");
+  height: 100vh;
+}
+
+.bg-image2 {
+  background-image: url("bg-3.jpeg");
+  height: 50vh;
+}
+
+.caption {
+  position: relative;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+}
+
+.box {
+  background-color: #fff;
+  color: #777;
+  text-align: center;
+  padding: 50px 80px;
+}

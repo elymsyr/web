@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {font-size: 15px;color: aqua;}
+    p {color: red;}
+    p {border: 1px solid green;} /*border does not inhterit*/
+    em {border: inherit;} /*border is inhterited now*/
+    em {color: initial;} /*use browser default*/
+  </style>
+</head>
+<body>
+  <header>
+    <main>
+      <section>
+        <h1 id="page-title" class="f40">Welcome to MovieApp</h1>
+        <p>Lorem ipsum dolor <em>amet consectetur adipisicing elit.</em> Magni, inventore!</p>
+      </section>
+      <section>
+        <h2 id="page-subtitle" class="f20">How It Works?</h2>
+      </section>
+    </main>
+  </header>
+</body>

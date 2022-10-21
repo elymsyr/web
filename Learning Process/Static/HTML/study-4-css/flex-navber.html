@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: goldenrod;
+            padding: 0 20px;
+        }
+
+        nav a {
+            /* margin-right: auto; */
+            align-self: center;
+            color: #fff;
+            font-size: 20px;
+        }
+
+        ul {
+            display: flex;
+        }
+
+        li a {
+            display: block;
+            padding: 16px;
+        }
+
+        li a:hover {
+            background-color: rgb(153, 129, 67);
+        }
+
+        nav li:last-child {
+            display: none;
+        }
+
+        @media (max-width: 600px) {
+
+            nav {
+                flex-direction: column;
+                position: relative;
+            }
+            
+            nav a {
+                padding: 10px;
+                align-self: flex-start;
+            }
+
+            ul {
+                flex-direction: column;
+            }
+
+            ul a {
+                text-align: center;
+                padding: 10px;
+                border-top: 1px solid rgba(255,255,255, 0.3);
+                border-bottom: 1px solid rgba(0,0,0, 0.1);
+            }
+
+            nav li:last-child {
+                top: -2px;
+                right: 10px;
+                position: absolute;
+                display: block;
+            }
+
+            .responsive ul li:not(:last-child) {
+                display: none;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav class="responsive">
+        <a href="#">LOGO</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">M</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>

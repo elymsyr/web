@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: 15px;
+  line-height: 28px;
+  font-family: 'Press Start 2P', cursive;
+  text-indent: 35px;
+  text-align: justify;
+  font-weight: lighter;
+  font-style: italic;
+}

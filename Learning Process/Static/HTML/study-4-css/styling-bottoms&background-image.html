@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+
+  * {box-sizing: border-box;} /*important thing*/
+
+  #showcase {
+    background-color: #2e4c6d;
+    background-image: url(images/home-bg.jpeg);
+    /* background-position: center left; */
+    /* background-position-x: bottom; */
+    /* background-position-y: center; */
+    background-position: center;
+    height: 200px;
+    /* height: calc(100vh - 127px); */
+    width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  #how-it-works {
+    background-color: #fc997c;
+    padding: 10px;
+    }
+
+  .main-header {
+    background-color: #fc997c;
+    padding: 8px 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .main-nav {
+    display: inline-block;
+    width: calc(100% - 108px);
+    text-align: right;
+  }
+  .main-nav__items {
+    margin: 0;
+    padding: 0;
+  }
+  .main-nav__items {
+    display: inline-block;
+    margin: 0 8px;
+    text-decoration: none;
+  }
+
+  .main-nav__items a {
+    text-decoration: none;
+    color: aliceblue;
+  }
+
+  .main-nav__items a:hover, .main-nav__items:hover::before  {
+    color: #2e4c6d;
+  }
+
+  .main-nav__items:active::before, .main-nav__items a:active {
+    color: #fff;
+  }
+
+  .main-nav__items::before {
+    content: '\2022';
+    color: white;
+  }
+
+  .main-header__logo {
+    color: white ;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .main-nav__items--login a {
+    color: white;
+    background-color: #2e4c6d;
+    padding: 4px 16px;
+    border-radius: 8px;
+    border: 2px solid white;
+  }
+
+  .main-nav__items--login::before {
+    content: none;
+  }
+
+  .main-nav__items--login a:hover {
+    color: #2e4c6d;
+    border: 2px solid #2e4c6d;
+    background-color: #fff;
+  }
+
+  .main-nav__items--login a:active {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #2e4c6d;
+  }
+
+</style>
+<body>
+  <header class="main-header">
+    <a href="#" class="main-header__logo">MovieApp</a>
+    <nav class="main-nav">
+      <li class="main-nav__items">
+        <a href="#">Home</a>
+      </li>
+      <li class="main-nav__items">
+        <a href="#">Movies</a>
+      </li>
+      <li class="main-nav__items main-nav__items--login">
+        <a href="#">Login</a>
+      </li>
+    </nav>
+</header>
+  <main>
+    <main>
+      <section id="showcase">
+        <h1>Welcome to MovieApp</h1>
+      </section>
+      <section id="how-it-works">
+        <h2>How It Works?</h2>
+      </section>
+  </main>
+</body>
+</html>

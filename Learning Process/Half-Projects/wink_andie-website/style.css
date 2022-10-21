@@ -1,0 +1,200 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bs-gutter-x: 0
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 100;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, .nav-link, .nav-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+    color: #dddddd !important;
+    font-size: 50px !important;
+}
+
+.fit {
+    width: fit-content !important;
+}
+
+.banner-img, .banner-img-hover {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all .5s;
+    overflow: hidden;
+}
+
+.col {
+    padding: 0 !important;
+}
+
+.row {
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.nav-brand {
+    font-size: 16px !important;
+    text-decoration: none !important;
+}
+
+p {
+    color: #dddddd;
+    font-size: 20px !important;
+    word-spacing: 1px;
+    letter-spacing: .3px;
+}
+
+.header {
+    height: 100vh !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-h {
+    height: 100vh;
+}
+
+.w-60 {
+    width: 60% !important;
+    margin: auto;
+}
+
+.h-50-a {
+  height: 50vh !important;
+  overflow: hidden !important;
+}
+
+.button {
+    margin: auto;
+}
+
+.cta, .cta_nav {
+    border: none;
+    background: none;
+  }
+  
+.cta span {
+  padding-bottom: 7px;
+  letter-spacing: 4px;
+  font-size: 14px;
+  padding-right: 15px;
+  text-transform: uppercase;
+  font-family: 'Gothic A1', sans-serif !important;
+  font-weight: 900 !important;
+  font-size: 13px !important;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #dddddd !important;
+  text-decoration: none !important;
+}
+
+.cta svg {
+  transform: translateX(-8px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active svg {
+  transform: scale(0.9);
+}
+
+.hover-underline-animation {
+  position: relative;
+  color: #ddd;
+  padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #ddd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cta_nav span {
+  padding-bottom: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none !important;
+}
+
+.cta_nav:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+main {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-img-hover {
+  filter: grayscale(1) blur(1px);
+  transform: scale(1.3);
+  transition: all .5s ease-out;
+}
+
+.banner-img-hover:hover {
+  filter: none;
+  transform: scale(1);
+}
+
+.text-main {
+  z-index: 10;
+  position: absolute;
+  display: grid;
+  height: 40vh;
+  width: 60vw;
+  align-self: center;
+  margin: auto;
+  border-radius: 10px;
+  background-color: rgba(214, 213, 213, 0.377);
+  backdrop-filter: blur(5px);  
+  pointer-events: none ;
+}
+
+nav {
+  transition: all .5s !important;
+}
+
+#back {
+  background-color: transparent;
+}
+
+#back:hover {
+  backdrop-filter: blur(8px);
+}
+
+.row>* {
+  margin-top: 0 !important;
+}

@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #eee;
+}
+
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+
+}
+
+ul {
+  margin-left: 100px;
+
+}
+
+ul li {
+  list-style: none;
+  display: inline-block;
+  float: left;
+  line-height: 50px;
+}
+
+ul li a {
+  font-weight: bolder;
+  display: block;
+  text-decoration: none;
+  color: #AB1A03;
+  font-size: 14px;
+  font-family: arial;
+  padding: 0 20px;
+}
+
+ul li a:hover {
+  color: #FF1A03;
+}

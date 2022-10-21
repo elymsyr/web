@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            font-size: 4em;
+            color: #fff;
+        }
+
+        .parallax_wrapper {
+            height: 100vh;
+            overflow-x: hidden;
+            overflow-y: auto;
+            perspective: 300px;
+        }
+
+        .intro_screen {
+            height: 100vh;
+            background-color: tomato;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .outro_screen {
+            height: 100vh;
+            background-color: teal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parallax_group {
+            position: relative;
+            height: 100vh;
+            transform-style: preserve-3d;
+        }
+
+        .parallax_layer {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .based_layer {
+            transform: translateZ(-300px) scale(2);
+        }
+
+        .top_layer {
+            transform: translateZ(210px) scale(0.3);
+        }
+
+        #group-1 {
+            z-index: -1;
+        }
+
+        #group-1 > .based_layer {
+            background-color: crimson;
+        }
+
+        #group-2 > .mid_layer {
+            background-color: yellowgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parallax_wrapper">
+        <div class="parallax_group intro_screen" id="intro">
+            Orhun Parallax Tutorial Work
+        </div>
+
+        <div class="parallax_group" id="group-1">
+            <div class="parallax_layer based_layer">
+                Base Layer Page
+            </div>
+            <div class="parallax_layer mid_layer">
+                Mid Layer Page
+            </div>
+        </div>
+
+        <div class="parallax_group" id="group-2">
+            <div class="parallax_layer mid_layer">
+                Mid Layer Page #2
+            </div>
+            <div class="parallax_layer top_layer">
+                Top Layer Page
+            </div>
+        </div>
+
+        <div class="parallax_group outro_screen" id="outro">
+            The End
+        </div>
+    </div>
+    
+</body>
+</html>

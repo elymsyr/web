@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* NAVBAR */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #343a40ce;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 70px;
+    padding: 0 3rem;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    padding: 1rem 2rem;
+    margin: 0 .5px;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar li .hovera {
+    position: absolute;
+    width: 0;
+    height: 7%;
+    background-color: var(--warning);
+    bottom: 0;
+    right: 0;
+    transition: all .3s;
+}
+
+.navbar li .hoverb {
+    position: absolute;
+    width: 0;
+    height: 7%;
+    background-color: var(--warning);
+    bottom: 0;
+    left: 0;
+    transition: all .3s;
+}
+
+.navbar li:hover .hovera {
+    width: 50%;
+}
+
+.navbar li:hover .hoverb {
+    width: 50%;
+}
+
+.navbar .brand {
+    font-weight: 400;
+}
+
+.navbar h1 {
+    font-size: 3rem;
+}
+
+.navbar span {
+    color: var(--warning);
+}
+
+.main-header {
+    background-image: url('img/bg-1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.main-header .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6)
+} 
+
+.main-header .content h1 {
+    font-size: 4.8rem;
+}
+
+.main-header .content p {
+    font-size: 2.4rem;
+    max-width: 600px;
+    text-align: center;
+    margin: 2rem 0 3rem;
+}
+
+.btn-rm {
+    position: relative;
+    width: 155px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.button-rm {
+    position: absolute;
+    left: 48px;
+    top: 10px;
+    transition: all .5s ease-in-out;
+}
+
+#read-more {
+    position: absolute;
+    left: 26px;
+    top: 14px;
+    transition: all .5s ease-in-out;
+}
+
+.btn-rm:hover .button-rm {
+    transform: translate(120px);
+}
+
+.btn-rm:hover #read-more {
+    transform: translate(47px, 1px) scale(1.5) rotate(90deg);
+}
+

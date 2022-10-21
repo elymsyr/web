@@ -1,0 +1,42 @@
+1 index.html dosyası oluştur.
+
+2 yeni bir terminal açarak 'npm init -y' yaz ve package.json dosyası oluştur.
+
+3 'npm install --save-dev parcel' yazarak parcel kur.
+    node_moduler dosyası oluştur
+    package-lock.json dosyası oluşur
+    package.json dosyasına:
+        "devDependencies": {
+            "parcel": "(version)"
+        }
+        böülümü eklenir
+
+4 'npm install bootstrap' yaz
+    package.json dosyasına:
+        "dependencies": {
+            "bootstrap": "(version)"
+        }
+        böülümü eklenir
+
+5 src adlı yeni bir klasör aç
+
+6 index.html dosyasını src klasörü içine al
+
+7 src klasörü içine assets adlı yeni bir klaör aç
+
+8 assets klasörü içine js ve scss adlı iki yeni klasör
+
+9 js klasörüne 'main.js' ve scss klasörüne 'main.scss' adlı iki yeni dosya oluştur
+
+10 yeni açtığın iki dosyayı link script aracılığı ile index html dosyasına bağla
+    <script type="module" src".assets/js/main.js"></script>
+
+11 package.json dosyasındaki "main": "index.js", kısmını
+    "source": "./src/index.html", ile değiştir
+
+12 package.json dosyasındaki "test": "echo \"Error: no test specified\" && exit 1" kısmını
+    "dev": "parcel"
+    "build": "parcel build"
+    ile değiştir
+
+13 'npm run dev' 'npm run build'

@@ -1,0 +1,129 @@
+main {
+    padding-top: 60px;
+
+    background: hsla(230, 22%, 16%, 1) !important;
+
+    background: radial-gradient(circle, hsla(230, 22%, 16%, 1) 0%, hsla(229, 25%, 13%, 1) 48%, hsla(229, 25%, 13%, 1) 92%) !important;
+
+    background: -moz-radial-gradient(circle, hsla(230, 22%, 16%, 1) 0%, hsla(229, 25%, 13%, 1) 48%, hsla(229, 25%, 13%, 1) 92%) !important;
+
+    background: -webkit-radial-gradient(circle, hsla(230, 22%, 16%, 1) 0%, hsla(229, 25%, 13%, 1) 48%, hsla(229, 25%, 13%, 1) 92%) !important;
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#202332", endColorstr="#181B28", GradientType=1 ) !important;
+}
+
+.bg-primary {
+    background-color: rgb(24, 27, 40) !important;
+}
+
+.bg-gradient-primary {
+    background: hsla(0, 0%, 0%, 1);
+
+    background: linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(230, 26%, 9%, 1) 52%, hsla(229, 25%, 13%, 1) 100%) !important;
+
+    background: -moz-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(230, 26%, 9%, 1) 52%, hsla(229, 25%, 13%, 1) 100%) !important;
+
+    background: -webkit-linear-gradient(270deg, hsla(0, 0%, 0%, 1) 0%, hsla(230, 26%, 9%, 1) 52%, hsla(229, 25%, 13%, 1) 100%) !important;
+
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#000000", endColorstr="#11131D", GradientType=1 ) !important;
+}
+
+.carousel-item {
+    position: relative !important;
+}
+
+.carousel-item-name {
+    pointer-events: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.publishers {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.publisher {
+    position: relative;
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 3px solid rgb(65,67,78);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .6s;
+    box-shadow: 0px 40px 45px -11px rgba(0,0,0,0.68);
+    background: hsla(231, 14%, 19%, 1);
+    background: linear-gradient(270deg, hsla(231, 14%, 19%, 1) 5%, hsla(235, 17%, 12%, 1) 95%);
+    background: -moz-linear-gradient(270deg, hsla(231, 14%, 19%, 1) 5%, hsla(235, 17%, 12%, 1) 95%);
+    background: -webkit-linear-gradient(270deg, hsla(231, 14%, 19%, 1) 5%, hsla(235, 17%, 12%, 1) 95%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#292B36", endColorstr="#1A1B25", GradientType=1 );
+}
+
+.publisher-name {
+    width: 100%;
+    height: auto;
+    transition: all .6s;
+}
+
+video {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/* .publisher:hover video{
+    display: block;
+} */
+
+.publisher:hover .publisher-name{
+    z-index: 1;
+    transform: scale(1.1);
+}
+
+.publisher:hover {
+    transform: scale(1.05);
+    border: 3px solid rgb(155, 157, 165);
+    box-shadow: 0px 11px 77px 12px rgba(0,0,0,0.68);
+}
+
+.carousel-indicators button {
+    height: 6px !important;
+    width: 6px !important;
+    margin: 0 6px !important;
+    border-radius: 100%;
+}
+
+.carousel-indicators {
+    justify-content: flex-end !important;
+    margin-right: 1rem !important;
+    margin-bottom: .5rem !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    width: 7% !important;
+}
+
+.active {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap !important;
+    
+}
+
+.movie {
+    width: 100%;
+    height: auto;
+    display: block;
+}
