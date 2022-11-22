@@ -45,6 +45,3 @@ console.log(typeof yas);
 
 */
 
-var ogrenciAd = "Ada";
-
-let
