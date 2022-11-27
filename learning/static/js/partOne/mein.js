@@ -45,3 +45,85 @@ console.log(typeof yas);
 
 */
 
+
+// WORD AND SENTENCE COUNTER
+
+/*
+
+// The algorithm counts "1.10.32" and "H." as one word.
+
+let string = "The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from 'de Finibus Bonorum et Malorum' by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham."
+
+let wordCount = 0;
+let sentenceCount = 0;
+
+for(i=0;i<=string.length;i++) {
+    if(string[i] == " ") {
+        wordCount++;
+    }
+
+    // or use .split method :/
+
+    if(string[i] == "." && (!isNaN(string[i-1] * 1) && !isNaN(string[i+1] * 1))) {
+        while(string[i] != " ") {
+            i++;
+        }
+        wordCount++;
+        continue;
+    }
+
+    if(string[i] == "." && (string[i-1].toUpperCase() && string[i-2] == " ")) {
+        continue;
+    }
+
+    if(string[i] == "." && string[i+1] != " ") {
+        wordCount++;
+    }
+
+    if(string[i] == ".") {
+        sentenceCount++;
+    }
+}
+
+console.log(`Word Counter : ${wordCount}`);
+console.log(`Sentence Counter : ${sentenceCount}`);
+
+*/
+
+// PUSH-DOWN AUTOMATA E = { a^n b^n }
+
+/*
+let string = "aaaaaabbbbbb";
+string = [...string];
+
+var stack = ['S'];
+var tapeHead;
+
+let stringControl = true;
+
+console.log(stack);
+
+for(i=0;i<=string.length;i++){
+    tapeHead = string[i];
+    if (tapeHead == "a"){
+        stack.push('A');
+        console.log(stack);
+    }
+    else if(tapeHead == "b"){
+        stack.pop();
+        console.log(stack);
+    }
+    else
+        break;
+}
+
+popped = stack.pop();
+if (popped == "S") {
+    stringControl = true;
+}
+else
+    stringControl = false;
+
+console.log(stringControl);
+*/
+
